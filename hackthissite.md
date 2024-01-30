@@ -19,6 +19,23 @@ https://www.hackthissite.org/missions/basic/1/
 View the pages code, and the password shall be revealed, it is in an
 HTML comment.
 
+## 2.
+
+> A slightly more difficult challenge, involving an incomplete 
+> password script. Requirements: Common sense.
+
+> Network Security Sam set up a password protection script. He made 
+> it load the real password from an unencrypted text file and compare 
+> it to the password the user enters. However, he neglected to upload 
+> the password file...
+
+https://www.hackthissite.org/missions/basic/2/
+
+### Solution
+
+The password is an empty string, solved using common sense with help
+of the challenges description.
+
 
 
 
