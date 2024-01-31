@@ -62,3 +62,30 @@ On the second line we see a hidden file input, it seems that the value
 of this file is the path to a file on the server that contains the
 __password__. Just navigate to the url.
 
+## 4. 
+
+> An email script has been set up, which sends the password to the 
+> administrator. Requirements: HTML knowledge, an email address
+>
+> This time Sam hardcoded the password into the script. However, 
+> the password is long and complex, and Sam is often forgetful. So 
+> he wrote a script that would email his password to him 
+> automatically in case he forgot. Here is the script:
+
+https://www.hackthissite.org/missions/basic/4/
+
+### Solution
+
+If we inspect the HTML of the "Send password to Sam" button, we see
+a form:
+
+```HTML
+<form action="/missions/basic/4/level4.php" method="post">
+    <input type="hidden" name="to" value="sam@hackthissite.org">
+	<input type="submit" value="Send password to Sam">
+</form>
+```
+
+The first input is hidden and its value is a hardcoded email address.
+We simply have to replace it with an email address we have access to
+and the password will be sent to that address.
