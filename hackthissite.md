@@ -36,6 +36,29 @@ https://www.hackthissite.org/missions/basic/2/
 The password is an empty string, solved using common sense with help
 of the challenges description.
 
+## 3.
 
+> Some intuition is needed to find the location of the hidden 
+> password file. Requirements: Basic HTML knowledge
 
+> This time Network Security Sam remembered to upload the password 
+> file, but there were deeper problems than that.
+
+https://www.hackthissite.org/missions/basic/3/
+
+### Solution
+
+If we inspect the HTML of the form we get:
+
+```HTML
+<form action="/missions/basic/3/index.php" method="post">
+  <input type="hidden" name="file" value="password.php">
+  <input type="password" name="password"><br><BR>
+  <input type="submit" value="submit">
+</form>
+```
+
+On the second line we see a hidden file input, it seems that the value
+of this file is the path to a file on the server that contains the
+__password__. Just navigate to the url.
 
